@@ -1,9 +1,9 @@
 /**
  * Given a RGB background, define a black or white text color.
  * 
- * @param {*} rBackground red color (0-255)
- * @param {*} gBackground green color (0-255)
- * @param {*} bBackground blue color (0-255)
+ * @param {integer} rBackground red color (0-255)
+ * @param {integer} gBackground green color (0-255)
+ * @param {integer} bBackground blue color (0-255)
  * @returns white [255, 255, 255] or black [0, 0, 0] color according to a relative luminance computation
  * source : https://en.wikipedia.org/wiki/Relative_luminance
  */

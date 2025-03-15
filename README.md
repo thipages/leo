@@ -3,8 +3,9 @@ Leo's functions
 
 ```javascript
 import {
-    readableTextColor
-} from 'https://esm.run/@titsoft/leo 
+    readableTextColor,
+    cssFromRgb
+} from 'https://esm.run/@titsoft/leo'
 ```
 
 ## readable-text-color.js
@@ -12,5 +13,14 @@ import {
 Given a RGB background, define a black or white text color
 
 ```
-function(rBackground, gBackground, bBackground) : [0,0,0] | [255,255,255]
+function(rBackground:int, gBackground:int, bBackground:int) : Array
+```
+
+## css-from-rgb.js
+
+Given a RGB Color, get the corresponding CSS string.
+
+```
+function(r:int, g:int, b:int) : String
+
 ```
