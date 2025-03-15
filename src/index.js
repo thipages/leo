@@ -1,4 +1,4 @@
-import readableTextColor from 'readableTextColor.js'
+import readableTextColor from './readable-text-color.js'
 export {
     readableTextColor
 }
