@@ -4,7 +4,8 @@ Leo's functions
 ```javascript
 import {
     readableTextColor,
-    cssFromRgb
+    cssFromRgb,
+    createElement
 } from 'https://esm.run/@titsoft/leo'
 ```
 
@@ -46,3 +47,5 @@ createElement('option', {
     _: 'a text content'
 })
 ```
+## Tests
+node --test
