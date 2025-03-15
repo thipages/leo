@@ -24,3 +24,25 @@ Given a RGB Color, get the corresponding CSS string.
 function(r:int, g:int, b:int) : String
 
 ```
+
+## create-element.js
+
+Create a HTML element with attributes and text content (no element children)
+
+```
+function (tag: string, attributesAndContent: object): HTMLElement
+```
+
+`attributesAndContent` may contain
+- attributes key/values pairs
+- element `textContent` filled with _underscore_ property
+
+
+Example
+``` javascript
+createElement('option', {
+    value: 'a value',
+    hidden: true,
+    _: 'a text content'
+})
+```
