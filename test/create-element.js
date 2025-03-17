@@ -1,7 +1,7 @@
 import createElement from "../src/create-element.js"
+import { getDocument } from "./utils.js"
 import { describe, it } from 'node:test'
 import assert from 'node:assert'
-import {parseHTML} from 'linkedom';
 describe ('Create a regular element', () => {
     it('should create a void element with the correct attribute', () => {
         const document = getDocument()
@@ -15,13 +15,3 @@ describe ('Create a regular element', () => {
         assert.strictEqual(element.textContent, 'a textContent value')
     })
 })
-function getDocument () {
-    const {document} = parseHTML(`
-        <!doctype html>
-        <html lang="en">
-          <head></head>
-          <body></body>
-        </html>
-      `)
-    return document
-}
