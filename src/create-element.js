@@ -9,7 +9,7 @@ export default function(document) {
      * @param {string} tag
      * @param {object} attributesAndContent
      */
-    return function (tag, attributesAndContent) {
+    return function (tag, attributesAndContent = {}) {
         const element = document.createElement(tag)
         const isVoid = VOID_ELEMENTS.includes(element)
         for (const [attributeOrContent, value] of Object.entries(attributesAndContent)) {
